@@ -1,0 +1,227 @@
+[
+  {
+    "id": "spark-curiosity",
+    "en": "spark curiosity",
+    "ja": "好奇心をかき立てる",
+    "category": "Learning & Education",
+    "example_en": "A good question can spark curiosity and make students want to explore further.",
+    "example_ja": "よい問いは好奇心をかき立て、生徒にさらに探究したいと思わせることができます。",
+    "prompt_ja": "授業の最初の問いが、生徒の好奇心をかき立てると言ってみましょう。"
+  },
+  {
+    "id": "nurture-creativity",
+    "en": "nurture creativity",
+    "ja": "創造性を育む",
+    "category": "Learning & Education",
+    "example_en": "Schools should create more opportunities to nurture creativity.",
+    "example_ja": "学校は創造性を育む機会をもっと作るべきです。",
+    "prompt_ja": "学校は創造性を育むべきだ、と主張してみましょう。"
+  },
+  {
+    "id": "master-a-skill",
+    "en": "master a skill",
+    "ja": "技能を習得する／極める",
+    "category": "Skill Building",
+    "example_en": "It takes repeated practice to master a skill.",
+    "example_ja": "技能を習得するには反復練習が必要です。",
+    "prompt_ja": "技能を習得するには反復が必要だ、と説明してみましょう。"
+  },
+  {
+    "id": "build-confidence",
+    "en": "build confidence",
+    "ja": "自信をつける",
+    "category": "Communication",
+    "example_en": "Frequent low-stakes speaking practice helps learners build confidence.",
+    "example_ja": "気軽に話せる練習を頻繁に行うことで、学習者は自信をつけられます。",
+    "prompt_ja": "即興スピーキング練習が自信につながる、と説明してみましょう。"
+  },
+  {
+    "id": "strengthen-connections",
+    "en": "strengthen connections",
+    "ja": "つながりを強める",
+    "category": "Communication",
+    "example_en": "Shared projects can strengthen connections between students.",
+    "example_ja": "共同プロジェクトは生徒同士のつながりを強めることができます。",
+    "prompt_ja": "共同作業が人とのつながりを強める、と言ってみましょう。"
+  },
+  {
+    "id": "gain-insight",
+    "en": "gain insight",
+    "ja": "洞察を得る／理解を深める",
+    "category": "Thinking",
+    "example_en": "We can gain insight into learners' real needs by observing their behavior.",
+    "example_ja": "学習者の行動を観察することで、本当のニーズについて洞察を得られます。",
+    "prompt_ja": "ユーザー観察から隠れたニーズへの洞察を得られる、と説明してみましょう。"
+  },
+  {
+    "id": "foster-growth",
+    "en": "foster growth",
+    "ja": "成長を促す",
+    "category": "Learning & Education",
+    "example_en": "Constructive feedback can foster long-term growth.",
+    "example_ja": "建設的なフィードバックは長期的な成長を促すことができます。",
+    "prompt_ja": "よいフィードバックが長期的な成長を促す、と言ってみましょう。"
+  },
+  {
+    "id": "share-perspectives",
+    "en": "share perspectives",
+    "ja": "視点・考え方を共有する",
+    "category": "Communication",
+    "example_en": "Students need more chances to share perspectives in English.",
+    "example_ja": "生徒には英語で自分の視点を共有する機会がもっと必要です。",
+    "prompt_ja": "英語で考え方を共有する機会が必要だ、と主張してみましょう。"
+  },
+  {
+    "id": "challenge-assumptions",
+    "en": "challenge assumptions",
+    "ja": "前提を疑う／既成概念に異議を唱える",
+    "category": "Thinking",
+    "example_en": "Innovation often begins when we challenge assumptions.",
+    "example_ja": "イノベーションは、私たちが前提を疑うところから始まることがよくあります。",
+    "prompt_ja": "イノベーションには前提を疑うことが必要だ、と説明してみましょう。"
+  },
+  {
+    "id": "deliver-value",
+    "en": "deliver value",
+    "ja": "価値を提供する",
+    "category": "Business & Product",
+    "example_en": "A successful product must deliver value from the user's point of view.",
+    "example_ja": "成功する製品は、ユーザーの視点から価値を提供しなければなりません。",
+    "prompt_ja": "製品はユーザーに明確な価値を提供すべきだ、と言ってみましょう。"
+  },
+  {
+    "id": "solve-problems",
+    "en": "solve problems",
+    "ja": "問題を解決する",
+    "category": "Business & Product",
+    "example_en": "AI should help people solve problems that were previously too time-consuming.",
+    "example_ja": "AIは、以前は時間がかかりすぎた問題の解決を支援すべきです。",
+    "prompt_ja": "AIの価値は現実の問題を解決することだ、と説明してみましょう。"
+  },
+  {
+    "id": "explore-possibilities",
+    "en": "explore possibilities",
+    "ja": "可能性を探る",
+    "category": "Thinking",
+    "example_en": "Before choosing one solution, we should explore different possibilities.",
+    "example_ja": "一つの解決策を選ぶ前に、さまざまな可能性を探るべきです。",
+    "prompt_ja": "結論を急がず、まず可能性を探るべきだと言ってみましょう。"
+  },
+  {
+    "id": "refine-skills",
+    "en": "refine skills",
+    "ja": "技能を磨く",
+    "category": "Skill Building",
+    "example_en": "Regular practice helps us refine our speaking skills.",
+    "example_ja": "定期的な練習はスピーキング技能を磨くのに役立ちます。",
+    "prompt_ja": "毎日の短い練習でスキルを磨ける、と説明してみましょう。"
+  },
+  {
+    "id": "inspire-change",
+    "en": "inspire change",
+    "ja": "変化を促す／変革のきっかけを与える",
+    "category": "Leadership",
+    "example_en": "A small successful pilot can inspire change across a school.",
+    "example_ja": "小さな成功事例が、学校全体の変化を促すことがあります。",
+    "prompt_ja": "小さな実践が大きな変化のきっかけになる、と言ってみましょう。"
+  },
+  {
+    "id": "measure-progress",
+    "en": "measure progress",
+    "ja": "進捗・上達を測る",
+    "category": "Learning & Education",
+    "example_en": "Learners need a simple way to measure progress over time.",
+    "example_ja": "学習者には、時間の経過とともに上達を測る簡単な方法が必要です。",
+    "prompt_ja": "学習の継続には上達を測れる仕組みが必要だ、と説明してみましょう。"
+  },
+  {
+    "id": "cultivate-curiosity",
+    "en": "cultivate curiosity",
+    "ja": "好奇心を育てる",
+    "category": "Learning & Education",
+    "example_en": "Teachers can cultivate curiosity by leaving room for students to ask questions.",
+    "example_ja": "教師は、生徒が質問できる余地を残すことで好奇心を育てられます。",
+    "prompt_ja": "教師は答えを与えすぎず、好奇心を育てるべきだと言ってみましょう。"
+  },
+  {
+    "id": "refine-strategies",
+    "en": "refine strategies",
+    "ja": "戦略を磨く／改善する",
+    "category": "Strategy",
+    "example_en": "We need to test our ideas and refine our strategies based on evidence.",
+    "example_ja": "アイデアを検証し、根拠に基づいて戦略を改善する必要があります。",
+    "prompt_ja": "データをもとに戦略を改善すべきだ、と説明してみましょう。"
+  },
+  {
+    "id": "expand-knowledge",
+    "en": "expand knowledge",
+    "ja": "知識を広げる",
+    "category": "Learning & Education",
+    "example_en": "Reading widely can expand your knowledge, but speaking helps you activate it.",
+    "example_ja": "幅広く読むことで知識は広がりますが、話すことでその知識を使えるようになります。",
+    "prompt_ja": "読むことは知識を広げ、話すことは知識を使える状態にすると説明してみましょう。"
+  },
+  {
+    "id": "facilitate-learning",
+    "en": "facilitate learning",
+    "ja": "学習を促進する／学びを支援する",
+    "category": "Learning & Education",
+    "example_en": "Technology should facilitate learning rather than distract from it.",
+    "example_ja": "テクノロジーは学習を妨げるのではなく、促進すべきです。",
+    "prompt_ja": "テクノロジーは学習そのものを促進すべきだ、と主張してみましょう。"
+  },
+  {
+    "id": "clarify-goals",
+    "en": "clarify goals",
+    "ja": "目標を明確にする",
+    "category": "Strategy",
+    "example_en": "Before building a new app, we should clarify our goals.",
+    "example_ja": "新しいアプリを作る前に、目標を明確にすべきです。",
+    "prompt_ja": "開発を始める前に目標を明確にする必要がある、と言ってみましょう。"
+  },
+  {
+    "id": "drive-progress",
+    "en": "drive progress",
+    "ja": "進歩を推進する",
+    "category": "Leadership",
+    "example_en": "Small experiments can drive progress more effectively than endless discussion.",
+    "example_ja": "小さな実験は、終わりのない議論よりも効果的に進歩を推進できます。",
+    "prompt_ja": "小さな実験が進歩を生む、と説明してみましょう。"
+  },
+  {
+    "id": "offer-feedback",
+    "en": "offer feedback",
+    "ja": "フィードバックを提供する",
+    "category": "Communication",
+    "example_en": "AI can offer feedback without interrupting the flow of conversation.",
+    "example_ja": "AIは会話の流れを止めずにフィードバックを提供できます。",
+    "prompt_ja": "AIが会話を止めずにフィードバックできる、と説明してみましょう。"
+  },
+  {
+    "id": "formulate-plans",
+    "en": "formulate plans",
+    "ja": "計画を立てる／策定する",
+    "category": "Strategy",
+    "example_en": "Once we understand the problem, we can formulate practical plans.",
+    "example_ja": "問題を理解すれば、実践的な計画を立てることができます。",
+    "prompt_ja": "問題を理解してから計画を立てるべきだ、と言ってみましょう。"
+  },
+  {
+    "id": "inspire-action",
+    "en": "inspire action",
+    "ja": "行動を促す",
+    "category": "Leadership",
+    "example_en": "A strong vision should inspire action, not just agreement.",
+    "example_ja": "強いビジョンは、単なる賛同ではなく行動を促すべきです。",
+    "prompt_ja": "良いビジョンは人を行動に動かす、と説明してみましょう。"
+  },
+  {
+    "id": "unlock-potential",
+    "en": "unlock potential",
+    "ja": "潜在能力を引き出す",
+    "category": "Leadership",
+    "example_en": "The right learning environment can unlock students' potential.",
+    "example_ja": "適切な学習環境は、生徒の潜在能力を引き出すことができます。",
+    "prompt_ja": "環境次第で学習者の潜在能力を引き出せる、と言ってみましょう。"
+  }
+]

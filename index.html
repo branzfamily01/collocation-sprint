@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f1e7" />
+  <meta name="description" content="日本語から英語コロケーションを瞬時に取り出し、即興発話につなげるトレーニングアプリ" />
+  <title>Collocation Sprint</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ENGLISH THINKING LAB</p>
+        <h1>Collocation Sprint</h1>
+      </div>
+      <button class="icon-button" id="settingsBtn" aria-label="データ管理を開く">＋</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="pill">25 chunks ready</span>
+          <h2>知っている英語を、<br><em>とっさに使える英語へ。</em></h2>
+          <p>日本語 → 英語チャンク → 自分の1文。短い反復で、考えながら話す瞬発力を鍛えます。</p>
+        </div>
+        <div class="progress-card">
+          <div class="progress-ring" id="progressRing">
+            <span id="masteredCount">0</span>
+            <small>mastered</small>
+          </div>
+          <div>
+            <strong id="totalCount">25 chunks</strong>
+            <p id="streakText">今日の練習 0回</p>
+          </div>
+        </div>
+      </section>
+
+      <nav class="mode-grid" aria-label="練習モード">
+        <button class="mode-card active" data-mode="recall">
+          <span class="mode-number">01</span>
+          <strong>Instant Recall</strong>
+          <small>日本語から瞬時に英語</small>
+        </button>
+        <button class="mode-card" data-mode="speak">
+          <span class="mode-number">02</span>
+          <strong>Rapid Speaking</strong>
+          <small>8秒で自分の1文</small>
+        </button>
+        <button class="mode-card" data-mode="shadow">
+          <span class="mode-number">03</span>
+          <strong>Listen & Repeat</strong>
+          <small>音からチャンクを定着</small>
+        </button>
+        <button class="mode-card" data-mode="library">
+          <span class="mode-number">04</span>
+          <strong>Library</strong>
+          <small>英日一覧・検索</small>
+        </button>
+      </nav>
+
+      <section id="trainerPanel" class="trainer-panel">
+        <div class="trainer-head">
+          <div>
+            <span id="categoryBadge" class="category-badge">Learning & Education</span>
+            <p id="counter" class="counter">1 / 25</p>
+          </div>
+          <button id="shuffleBtn" class="text-button">Shuffle</button>
+        </div>
+
+        <div id="recallMode" class="mode-view">
+          <p class="instruction">日本語を見て、英語のコロケーションを声に出してください。</p>
+          <article class="prompt-card">
+            <span class="label">JAPANESE CUE</span>
+            <h3 id="jaCue">好奇心をかき立てる</h3>
+            <div class="timer-line">
+              <div id="timerBar" class="timer-bar"></div>
+            </div>
+            <button id="revealBtn" class="primary-button">答えを見る</button>
+            <div id="answerArea" class="answer-area hidden">
+              <span class="label">ENGLISH CHUNK</span>
+              <h3 id="enAnswer">spark curiosity</h3>
+              <button id="speakChunkBtn" class="sound-button">▶ Listen</button>
+              <div class="example-box">
+                <p id="exampleEn"></p>
+                <small id="exampleJa"></small>
+              </div>
+              <div class="rating-row">
+                <button class="rating-button" data-rating="again">もう一度</button>
+                <button class="rating-button" data-rating="good">言えた</button>
+                <button class="rating-button strong" data-rating="mastered">瞬時に言えた</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div id="speakMode" class="mode-view hidden">
+          <p class="instruction">ターゲット表現を使って、8秒以内に英語で1文話してください。</p>
+          <article class="prompt-card">
+            <span class="label">TARGET CHUNK</span>
+            <h3 id="speakTarget">spark curiosity</h3>
+            <p id="situationPrompt" class="situation-prompt"></p>
+            <div class="speaking-timer">
+              <span id="speakTimer">8</span>
+              <small>seconds</small>
+            </div>
+            <button id="startSpeakingBtn" class="primary-button">8秒チャレンジ</button>
+            <div id="sampleArea" class="answer-area hidden">
+              <span class="label">MODEL ANSWER</span>
+              <p id="sampleAnswer" class="model-answer"></p>
+              <button id="speakSampleBtn" class="sound-button">▶ Listen</button>
+              <div class="rating-row">
+                <button class="rating-button" data-speak-rating="again">もう一度</button>
+                <button class="rating-button strong" data-speak-rating="good">言えた・次へ</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div id="shadowMode" class="mode-view hidden">
+          <p class="instruction">英語を見ずに音を聞き、同じリズムで3回リピートしてください。</p>
+          <article class="prompt-card center">
+            <span class="label">LISTEN FIRST</span>
+            <div class="audio-orb" id="audioOrb">▶</div>
+            <button id="playAudioBtn" class="primary-button">チャンクを再生</button>
+            <button id="showShadowTextBtn" class="secondary-button">英語を表示</button>
+            <div id="shadowTextArea" class="answer-area hidden">
+              <h3 id="shadowText">spark curiosity</h3>
+              <p id="shadowExample"></p>
+              <button id="nextShadowBtn" class="primary-button">次のチャンク</button>
+            </div>
+          </article>
+        </div>
+
+        <div id="libraryMode" class="mode-view hidden">
+          <div class="library-toolbar">
+            <input id="searchInput" type="search" placeholder="英語・日本語・カテゴリーで検索" />
+            <select id="categoryFilter">
+              <option value="">All categories</option>
+            </select>
+          </div>
+          <div id="libraryList" class="library-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-note">
+      <span>JSON-expandable · Local progress</span>
+      <span>v1.0</span>
+    </footer>
+  </div>
+
+  <dialog id="settingsDialog">
+    <form method="dialog" class="dialog-card">
+      <div class="dialog-head">
+        <div>
+          <span class="label">DATA MANAGER</span>
+          <h2>コロケーションを追加</h2>
+        </div>
+        <button class="icon-button" value="cancel">×</button>
+      </div>
+      <p>JSONファイルを読み込むと、現在の25件に追加できます。追加データはこの端末のブラウザに保存されます。</p>
+      <label class="file-drop">
+        <input type="file" id="jsonFileInput" accept=".json,application/json" />
+        <strong>JSONを選択</strong>
+        <small>collocations.json と同じ形式</small>
+      </label>
+      <div class="dialog-actions">
+        <button type="button" id="exportBtn" class="secondary-button">現在のJSONを書き出す</button>
+        <button type="button" id="resetBtn" class="danger-button">追加データと進捗をリセット</button>
+      </div>
+      <details>
+        <summary>JSON形式を見る</summary>
+        <pre>{
+  "id": "bridge-the-gap",
+  "en": "bridge the gap",
+  "ja": "ギャップを埋める",
+  "category": "Communication",
+  "example_en": "Speaking practice can bridge the gap...",
+  "example_ja": "スピーキング練習は…",
+  "prompt_ja": "〜について英語で1文言ってみましょう。"
+}</pre>
+      </details>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
